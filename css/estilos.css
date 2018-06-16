@@ -1,0 +1,476 @@
+/* CSS Document */
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('font/Montserrat-Bold.ttf') format('truetype');
+	src: url('font/Montserrat-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+margin:0;
+}
+
+#menu-top {
+font-family:arial;
+font-size:11px;
+color:#666;
+font-weight:bold;
+}
+
+#menu-top a {
+color:#666;
+text-decoration:none;
+}
+
+#menu-top a:hover {
+color:#c00;
+text-decoration:none;
+}
+
+.data {
+font-family:arial;
+font-size:11px;
+color:#666;
+}
+
+#menu {
+font-family:arial;
+font-size:12px;
+color:#fff;
+}
+
+#menu a {
+color:#fff;
+text-decoration:none;
+}
+
+#menu a:hover {
+color:#fff;
+text-decoration:none;
+}
+
+#menu .celula {
+
+}
+
+#rod {
+font-family:arial;
+font-size:11px;
+color:#fff;
+}
+
+#rod a {
+color:#fff;
+text-decoration:underline;
+}
+
+#rod a:hover {
+color:#fff;
+text-decoration:underline;
+}
+
+#acesso .tit {
+font-family:arial;
+font-size:12px;
+font-weight:bold;
+color:#C10000;
+}
+
+#acesso .descricao {
+font-family:arial;
+font-size:10px;
+color:#666;
+}
+
+
+h1 {
+font-family:arial;
+color:#999;
+font-size:14px;
+font-weight:bold;
+}
+
+h3 { margin-bottom: 3rem; }
+
+textarea, select {
+border:1px solid #B0B0B0;
+font-family:arial;
+font-size:12px;
+}
+
+input.campo {
+border:1px solid #B0B0B0;
+font-family:verdana;
+font-size:12px;
+width:412px;
+
+}
+
+input.campo2 {
+border:1px solid #B0B0B0;
+font-family:verdana;
+font-size:12px;
+width:140px;
+
+}
+
+select {
+font-family:verdana;
+font-size:10px;
+}
+
+input.bt {
+border:1px solid #B0B0B0;
+font-family:verdana;
+font-size:10px;
+color:#000;
+background-color:#E6E6E6;
+padding:2px;
+
+}
+
+input.bt2 {
+border:1px solid #B0B0B0;
+font-family:verdana;
+font-size:10px;
+color:#000;
+background-color:#E6E6E6;
+padding:2px;
+
+}
+
+td { font-family:verdana; font-size:10px; }
+
+h3 { text-transform: uppercase; color: #337ab7; font-weight: 600;}
+h4 { text-transform: uppercase; color: #337ab7; font-weight: 600;}
+
+.control-label { font-weight: 600; }
+.treino-group { border: 1px solid #ccc; border-radius: 10px; padding: 10px; margin: 5px;}
+.treino-group-link:hover { cursor: pointer; }
+.form-grupo-fixo { margin: 50px auto; float: none; }
+.treinos { margin-top: 50px; margin-bottom: 40px; }
+
+.btn-topo-lista { margin-top: 15px;}
+.btn-alterar { text-align: center; margin-bottom: 60px; }
+
+.centraliza { text-align: center; }
+
+.input-medio { width: 60%; float: right; margin-top: -8px; text-align: center; }
+
+.labelQtdExercicios { margin-top: 7px; }
+.cmbQtdExercicios { width: 70px; float: right; text-align: center; }
+
+.ativo, .inativo {-webkit-border-radius: 9px; -moz-border-radius: 9px; border-radius: 9px; width: 20px; height: 20px; margin-left: 10px;}
+.ativo { background-color: #067807; }
+.inativo { background-color: #9c9797; }
+
+.cmbAcao { width: 90px; height: 20px; padding: 2px 12px; font-size: 10px; }
+.cmbAcao option { padding: 2px 12px; }
+
+.form-group p { float: right; padding-right: 20px; }
+hr { margin-top: 10px; margin-bottom: 10px;}
+
+.view-label { color: #8d8989; }
+.nome-exercicio { float: none !important; margin-top: 20px; }
+.nome-tipo { font-size: 16px; font-weight: 600; }
+
+.hora-lista { float: none !important; margin: 0; color: #bbb; font-weight: 600;}
+.btn-detalhes-lista { padding: 3px 6px !important; font-size: 11px; margin-left: 0; margin-top: 7px;}
+.btn-detalhes-lista span { padding: 3px 5px; font-size: 9px; }
+.titulo-lista { text-transform: uppercase; color: #337ab7; font-weight: 600; font-size: 14px; width: 157px;}
+
+.view-grupo-nome { width: 100%; height: 50px; margin-bottom: 10px; }
+.nome-treino { float: left; }
+.btn-view-feito { float: right; margin-top: 20px; padding: 7px 87px; width: 232px;}
+.nav-btn-detalhes { float: right; margin-top: -35px;}
+
+.main-detalhe { max-width: 500px; }
+
+.cadastro-modelo { margin-top: 0; }
+.cadastro-modelo h4 { margin-top: 0 !important; margin-bottom: 0.5rem !important; }
+
+#navbarHeader .container, #navbarControl .container { margin-top: 0;}
+
+#mask {
+
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:9000;
+  background-color:#000;
+  display:none;
+
+}
+
+#mensagem {
+
+  position:absolute;
+  left:0;
+  top:0;
+  display:none;
+  z-index:99999999;
+  padding:20px;
+  margin: 0 auto;
+
+}
+
+.detalhes {
+
+  position: absolute;
+  background-color: #fff;
+  z-index: 99999999;
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px;
+  display: none;
+
+}
+
+#fechaModal{
+  cursor: pointer;
+  float: right;
+  width: 65px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.estoqueBaixo {
+  background-color: #FFFF99 !important;
+}
+
+.col-min-left, .col-min-right { width: 150px;}
+.col-min-left { float: left;}
+.col-min-right { float: right;}
+.alterar-senha {margin: 0 auto;}
+.mensagem { color: #fff; background-color: #a94442; padding: 6px; border-radius: 10px; text-align: center; display: none; max-width: 100%; margin: 0 auto; }
+.btn-novo, .btn-listar { color: #fff; background-color: #2e782f; padding: 6px; border-radius: 10px; text-align: center; display: none; margin: 20px auto; max-width: 300px;}
+.btn-novo:hover, .btn-listar:hover { cursor: pointer;}
+
+.alterar-senha .btn-alterar { text-align: right;}
+
+.combodia, .combomes, .comboano { float: left; margin-right: 5px;}
+.combodia { max-width: 70px;}
+.combomes { max-width: 80px;}
+.comboano { max-width: 90px;}
+
+.nova-imagem, .lista-lojas { display: none;}
+.calendario-data { width: 130px;}
+
+footer { height: 30px; color: #fff; background-color: #222; padding: 5px; position: fixed; width: 100%; bottom: 0;}
+
+.container { max-width: 1600px; margin-top: 6rem; }
+.container-form { max-width: 980px; }
+.container-main-cast { margin-top: 2rem; min-height: 1350px; }
+.panel-body-buttons { padding-bottom: 20px; margin-top: -25px; }
+.label-danger { color: #fb0811; }
+.label-success { color: #09a708; }
+.active { background-color: #565555; }
+
+.form-group-responsavel, .form-group-drt, .form-group-blusa-bebe, .form-group-blusa-crianca, .form-group-blusa-adulto, .form-group-cabelos, .form-group-cabelos-cor, 
+.form-group-cabelos-tam, .form-group-pele-cor, .form-group-tatuagem, .form-group-carreira, .form-group-ativacao { display: none; }
+#formAcesso select { height: auto; }
+.form-group-menor { width: 150px; float: left; }
+.idade-label p { margin: -30px 0 0 150px; float: none; }
+.fotos-container { float: left; }
+.box-fotos { width: 300px; float: left; padding: 15px; height: auto; border: 1px solid #eee; margin: 5px; border-radius: 8px; min-height: 284px; }
+.box-img { text-align: center; min-height: 147px; max-height: 350px; margin-bottom: 10px; overflow: hidden;}
+.box-buttons { margin-bottom: 5px; }
+#ativacao-container { 
+  width: 320px; 
+  height: 250px; 
+  padding: 20px; 
+  background-color: #fff; 
+  border: 2px solid #ddd; 
+  border-radius: 10px; 
+  position:absolute;
+  left:0;
+  top:0;
+  z-index:99999999;
+  display:none;
+}
+.alerta { background-image: linear-gradient(to bottom,#d9534f 0,#c12e2a 100%); color: #fff; padding: 8px; text-align: center;}
+
+.album-cast { padding-top: 0 !important; }
+.container-cast { margin-top: 0; }
+.container-cast .card { margin-bottom: 0; }
+.ckbexcluirfoto { margin-left: 90px; }
+
+.cast-img { text-align: center; overflow: hidden; max-height: 330px; border-radius: 16px; border: 1px solid #ccc;}
+.cast-img img { width: 100%; }
+.cast-nome { margin-top: 10px; margin-left: 15px; }
+.cast-nome a { color: #265a88;  }
+.cast-nome a:hover { text-decoration: none; }
+#cast-btn-toggle { height: 38px; }
+.d-md-none { margin-bottom: 0;}
+.d-md-none .btn-sm { padding: .47rem 1rem; }
+
+#sidebar { padding: 0 0 50px 30px; }
+#sidebar li { margin-bottom: 5px; }
+.cast-top-bar, #sidebar h5 { background-color: #265a88; color: #fff; padding: 8px 0 8px 12px; border-radius: 10px;}
+.cast-top-bar { width: 100%; height: 38px; width: 98.5%; margin-left: 10px; border-radius: 10px; }
+
+.modelo-img { margin-bottom: 10px; }
+
+.container-fotos-detalhes { margin-bottom: 50px; }
+.box-fotos-detalhes { min-height: auto; }
+.box-fotos-detalhes .box-img { margin-bottom: 0; }
+
+.ocultar { display: none; }
+
+.box-btn-detalhes { margin-top: 50px; }
+.box-btn-busca { margin-top: 30px; }
+.no-result-busca { width: 100%; text-align: center; padding: 50px 0; font-size: 2rem; }
+
+.box-fotos-detalhes-pdf { width: 290px; padding: 10px; }
+.margin-bottom-20 { margin-bottom: 20px; }
+
+.estilizar select {
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-position: 98% center;
+
+}
+
+.box-busca { margin-bottom: 20px; }
+.box-busca .form-control { width: 75%; float: left; margin-right: 5px; }
+
+.box-main-opt { margin-bottom: 70px; }
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html, body {
+  overflow-x: hidden; /*Prevent scroll on narrow devices */
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+#frmFiltro .btn-group .multiselect { text-align: left; background: transparent; color: #495057;}
+#frmFiltro .btn-group ul { width: 100%;}
+#frmFiltro .btn-group li { margin-left: 15px;}
+#frmFiltro .btn-group .multiselect-container > .active { background-color: transparent;}
+#frmFiltro .btn-group .multiselect-container a { font-weight: 200;}
+#frmFiltro .btn-group .multiselect-container .active > a { background-color: transparent; background-image: none;}
+#frmFiltro .btn-group li label { color: #495057;}
+#frmFiltro .nav-item .btn-group { max-width: 235px; }
+
+#frmCadastrarAgente .btn-group .multiselect { text-align: left; background: transparent; color: #495057;}
+#frmCadastrarAgente .btn-group ul { width: 100%;}
+#frmCadastrarAgente .btn-group li { margin-left: 15px;}
+#frmCadastrarAgente .btn-group .multiselect-container > .active { background-color: transparent;}
+#frmCadastrarAgente .btn-group .multiselect-container a { font-weight: 200;}
+#frmCadastrarAgente .btn-group .multiselect-container .active > a { background-color: transparent; background-image: none;}
+#frmCadastrarAgente .btn-group li label { color: #495057;}
+
+#frmEditarAgente .btn-group .multiselect { text-align: left; background: transparent; color: #495057;}
+#frmEditarAgente .btn-group ul { width: 100%;}
+#frmEditarAgente .btn-group li { margin-left: 15px;}
+#frmEditarAgente .btn-group .multiselect-container > .active { background-color: transparent;}
+#frmEditarAgente .btn-group .multiselect-container a { font-weight: 200;}
+#frmEditarAgente .btn-group .multiselect-container .active > a { background-color: transparent; background-image: none;}
+#frmEditarAgente .btn-group li label { color: #495057;}
+
+.box-datas input { float: left; margin-right: 10px;}
+.box-site select { width: 80%; float: left; margin-right: 5px;}
+.label-imagem { float: left; margin-right: 10px;}
+#logo-index { margin-bottom: 30px; }
+.box-favoritos {margin-right: 20px;}
+
+.detalhes-img-label {position: absolute; padding-left: 10px; color: white; background-color: cadetblue; margin-left: 4px;}
+.campo-oculto {display: none;}
+
+
+@media screen and (max-width: 1200px) {
+
+  .cast-img { max-height: 165px; }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .cast-img { max-height: 138px; }
+
+}
+
+@media screen and (max-width: 769px) {
+
+  .cast-img { max-height: 86px; }
+
+}
+
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    right: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-left.active-row
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+    padding-top: 0 !important;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -100%; /* 12 columns */
+  }
+
+  .row-offcanvas-right.active-row
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active-row {
+    left: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active-row {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+
+  .cast-img { max-height: 100%;}
+
+}
+
+@media screen and (max-width: 414px) {
+
+  .container-cast .row { width: 115%; margin-left: -20px; }
+
+}
+
+@media screen and (max-width: 373px) {
+
+  #frmFiltro .btn { width: 100%; margin-bottom: 10px; }
+
+}
+
+#cboxLoadedContent { overflow: hidden !important; }
