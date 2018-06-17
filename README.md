@@ -2,7 +2,7 @@
 
 ## Desenvolvedor
 
-Marcio borges
+Marcio Borges
 
 ## Instalação
 
