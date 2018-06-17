@@ -59,19 +59,19 @@ include "../interface/menu_adm.php";
                               
                 <div class="form-group">
                     <label class="control-label" for="txtNome">Nome</label>
-                    <input class="form-control" id="txtNome" type="text" required name="txtNome" value="<?php echo $Nome; ?>">
+                    <input class="form-control" id="txtNome" type="text" required name="txtNome" value="<?php echo !empty($Nome)?$Nome:''; ?>">
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="txtDescricao">Descrição</label>
-                    <textarea class="form-control" id="txtDescricao" type="email" required name="txtDescricao"><?php echo $Descricao; ?></textarea>
+                    <textarea class="form-control" id="txtDescricao" type="email" required name="txtDescricao"><?php echo !empty($Descricao)?$Descricao:''; ?></textarea>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="txtQtd">Quantidade</label>
-                    <input class="form-control" id="txtQtd" type="text" required name="txtQtd" value="<?php echo $Qtd; ?>">
+                    <input class="form-control" id="txtQtd" type="text" required name="txtQtd" value="<?php echo !empty($Qtd)?$Qtd:''; ?>">
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="txtPreco">Preço</label>
-                    <input class="form-control" id="txtPreco" type="text" required name="txtPreco" value="<?php echo $Preco; ?>">
+                    <input class="form-control" id="txtPreco" type="text" required name="txtPreco" value="<?php echo !empty($preco)?number_format($preco, 2, ',', ''):''; ?>">
                 </div> 
                 
                 <div class="form-group btn-alterar">
