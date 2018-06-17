@@ -84,7 +84,7 @@ if($_REQUEST["acao"]) {
                     </td>';
 
             $result .= '<td>'.$qtd.'</td>';
-            $result .= '<td>'.$preco.'</td>'; 
+            $result .= '<td>'.number_format($preco, 2, ',', '').'</td>'; 
             $result .= '<td align="left" nowrap>
                   <a href="#" onClick="editar('.$id.')"> Editar </a> | 
                   <a href="#" onClick="excluir('.$id.')"> Excluir </a> | 
